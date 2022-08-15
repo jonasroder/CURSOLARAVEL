@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Client\Request;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +18,6 @@ Route::get('/', function () {
     return view('inicio');
 });
 
-Route::post('/cadastrar-produto', function (Request) {
+Route::post('/cadastrar-produto', function (Request $request) {
     return view('inicio');
 });
